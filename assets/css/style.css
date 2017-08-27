@@ -1,0 +1,21 @@
+header {
+	text-align: center;
+	margin-bottom: 20px;
+	padding: 10px;
+	background: black;
+	font-family: verdana, helvetica, arial;
+	height: 200px;
+}
+
+body{
+	text-align: center;
+	background-color: #1d4d91;
+	margin:20px;
+	
+}
+
+.container {
+	background-color: #c0cad8;
+	border: 2px : black;
+
+}
