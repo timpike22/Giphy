@@ -1,21 +1,88 @@
-header {
-	text-align: center;
-	margin-bottom: 20px;
-	padding: 10px;
-	background: black;
-	font-family: verdana, helvetica, arial;
-	height: 200px;
-}
+
 
 body{
 	text-align: center;
-	background-color: #1d4d91;
-	margin:20px;
-	
+	background-color: #e9e9e9;
+	margin-top: 5%;
+	margin-bottom: 5%;
+	margin-left: 7.5%;
+	margin-right: 7.5%;
+
+}
+
+.title {
+	font-family: 'Cabin Sketch',
+	cursive;
+	margin: 5%;
+	padding-top: 5%;
+	padding-bottom: 1%;
+	border-bottom: solid 1px black;
 }
 
 .container {
-	background-color: #c0cad8;
-	border: 2px : black;
+	font-family: 'Cabin Sketch', 
+	cursive;
+	max-width: 100%;
+	margin: auto;
+	padding-bottom: 2%;
 
+}
+
+.shadow {
+	position: relative;
+	-webkit-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	-moz-box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+	box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3), 0 0 40px rgba(0, 0, 0, 0.1) inset;
+}
+
+.shadow:before,
+.shadow:after {
+	content: "";
+	position: absolute;
+	z-index: -1;
+	-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+	-moz-box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+	box-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+	top: 10px;
+	bottom: 10px;
+	left: 0;
+	right: 0;
+	-moz-border-radius: 100px / 10px;
+	border-radius: 100px / 10px;
+}
+.shadow:after {
+	right: 10px;
+	left: auto;
+	-webkit-transform: skew(8deg) rotate(3deg);
+	-moz-transform: skew(8deg) rotate(3deg);
+	-ms-transform: skew(8deg) rotate(3deg);
+	-o-transform: skew(8deg) rotate(3deg);
+	transform: skew(8deg) rotate(3deg);
+}
+
+#buttons-view {
+padding: 10px;
+}
+
+
+
+#animal-view {
+	padding-left: 10%;
+	padding-right: 10%;
+	margin: auto;
+	max-width: 100%;
+	display: inline-block;
+
+}
+
+.page-footer {
+	position: fixed;
+	height: 5%;
+	background-color: #ffffff;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	padding: .5%;
+	color : black;
+	text-align: center;
 }

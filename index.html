@@ -1,32 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="utf-8">
   <title>Giphy-Tastic</title>
 	<link rel="stylesheet" type="text/css" href="assets/css/reset.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+  <link href="https://fonts.googleapis.com/css?family=Cabin+Sketch" rel="stylesheet">
 </head>
 <body>
-  <div class="container">
-  <header>
-    <div class="jumbotron">
-      <h1>Animal Gifs are Awesome</h1>
+  <div class="shadow">
+    <div class="container">
+      <div class="title">
+        <h1>Gifs are Awesome</h1>
+        <h4>Check out some animal gifs or search for your own!</h4>
+      </div>
+      <div class="row justify-content-center">
+        <div class='col-md-3'>
+          <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search.." id='userInput'>
+            <span class="input-group-btn">
+              <button class="btn btn-default" type="button" id='searchButton'>Go!</button>
+            </span>
+            
+          </div>
+        </div>
+      </div>
+        <br>
+      <div class="row justify-content-between">
+        <div class="col-md-12">
+          <div id="buttons-view"></div>
+        </div>
+      </div>
     </div>
- </header>
-
-    <div  id="buttons-view"></div>
-    <form id="gif-form">
-      <label for="animal-input">Find an Animal Gif</label><br>
-      <input type="text" id="animal-input"><br>
-      <input class="btn btn-outline-primary" id="add-animal" type="submit" value="Submit">
-    </form>
-    <div id="animal-view"></div>
-
- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/javascript/java.js"></script>
-</div>
-</body>
-
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div id="animal-view"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="page-footer">
+      <div class="footer-copyright">
+        <div class="container-fluid">
+          © 2018 Copyright
+          <a> Tim Pike</a>
+        </div>
+      </div>
+    </div>
+  </body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="assets/javascript/java.js"></script>
 </html>
